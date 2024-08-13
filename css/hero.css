@@ -161,15 +161,6 @@
 /* responsive for mobile  */ 
 
 
-@media screen and (min-width: 375px) {
-    .hero-right-image { padding: 185px 0;}
-    }
-    @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx){.hero-right-image {
-            background-image: url(../images/img-1.jpg);
-    }
-    }
     @media screen and (min-width: 768px) {
         .hero-right-image {
             background-image:
