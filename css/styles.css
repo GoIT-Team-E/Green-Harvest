@@ -4,10 +4,111 @@
   --background-2: #7a3145;
   --main-text: #fbfbfb;
   --font-family: "Inter Tight", sans-serif;
+  
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  body { 
+    font-family: "Inter Tight", sans-serif;
+    color: var(--main-text);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    background-color: var(--background);
+
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  .container {
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+.hero-section,
+.howworks,
+.advertisement,
+.vegetable-section,
+.review-section,
+.order-section {
+overflow-x: hidden;
 }
+
+/*Responsive menü için .container genel stil */ 
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+  }
+}
+
+  @media screen and (min-width: 768px) {
+    .container {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .container {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+  }
+
+  .section {
+    padding: 80px 0;
+  }
+
+  .btn:hover,
+  .btn:focus {
+    background-color: transparent;
+    color: var(--main-text);
+    outline: 1px solid rgba(251, 251, 251, 0.4);
+  }
+
+  @media screen and (min-width: 768px) {
+    .btn {
+      width: 157px;
+      margin-right: auto;
+      margin-left: auto;
+      font-size: 18px;
+      line-height: 1.11;
+      letter-spacing: -0.01em;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    .btn {
+      margin-right: 0;
+      margin-left: 0;
+      color: var(--main-text);
+      background-color: var(--background-color-first);
+    }
+  
+    .btn:hover,
+    .btn:focus {
+      background-color: var(--background-color-third);
+      color: var(--accent-color-first);
+    }
+  }
+  

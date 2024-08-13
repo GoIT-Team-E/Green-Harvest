@@ -1,0 +1,70 @@
+.advertisement-section {  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  background: #fbfbfb;
+  height: 440px;
+}
+.advertisement-container { 
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+
+
+}
+
+.advertisement-span {
+  display: inline-flex;
+  font-family: "Inter Tight", sans-serif;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  border-radius: 12px;
+  background: #576f35;
+}
+
+.advertisement-p {
+  font-family: "Inter Tight", sans-serif; 
+  font-size: 76px;
+  font-weight: 600;
+  line-height: 80px;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  max-width: 1054px;
+  height: 240px;
+  color: black;
+}
+
+/* resp for adv */ 
+
+@media screen and (max-width: 320px) {
+  .advertisement-section {
+    display: inline-block;
+ 
+
+  }
+
+  .advertisement-container {
+    display: inline-block;
+   overflow: hidden;
+    max-width: 375px;
+      
+  }
+  .advertisement-p {
+    display: inline-block;
+    max-width: 375px;
+    font-size: 0.1rem;
+  
+    
+  }
+  .advertisement-span {
+    display: inline-block;
+    font-size: 0.1rem; /* Varsayılan yazı boyutu */
+  
+    
+  }
+}
+
