@@ -81,7 +81,7 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx){
     .hero-right-image {
-        background-image: url(../images/image-1.jpg);
+        background-image: url(../images/img-3.jpg);
     }
 }
 
@@ -117,7 +117,7 @@
     }
 
     .hero-right-image {
-        background-image: url(../images/image-1.jpg);
+        background-image: url(../images/img-1.jpg);
         max-width: 768px;
         padding: 270px 0;
     }
@@ -155,14 +155,7 @@
         max-width: 427px;
     }
 
-    .hero-container-right {
-        width: 650px;
-        height: 800px;
-        background-image: url(../images/image-1.jpg);
-        max-width: none;
-        background-size: cover;
-        background-origin: padding-box;
-    }
+  
 }
 
 /* High-resolution media query */
@@ -171,7 +164,7 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .hero-container-right {
-        background-image: url(../images/image-1.jpg);
+        background-image: url(../images/img-1.jpg);
     }
 }
 
@@ -186,7 +179,7 @@
     }
     @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx){.hero-right-image {
+        screen and (min-resolution: 2dppx){.images-container {
             background-image: url(../images/img-1.jpg);
     }
     }
